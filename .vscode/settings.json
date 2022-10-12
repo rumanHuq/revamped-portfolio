@@ -1,0 +1,9 @@
+{
+  "[vue][javascript][typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false,
+      "source.fixAll.eslint": true
+    },
+  }
+}
