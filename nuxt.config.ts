@@ -1,4 +1,3 @@
-import { processExpression } from "@vue/compiler-core";
 import eslintPlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({

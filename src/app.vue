@@ -13,7 +13,7 @@ const does = () => {
       return "writes";
   }
 };
-const baseUrl = import.meta.env.DEV === false ? "/revamped-portfolio/" : "/";
+const baseUrl = !import.meta.env.DEV ? "/revamped-portfolio/" : "/";
 </script>
 
 <template>
