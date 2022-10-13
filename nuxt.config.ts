@@ -1,3 +1,4 @@
+import { processExpression } from "@vue/compiler-core";
 import eslintPlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({
@@ -11,5 +12,8 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [eslintPlugin()],
-  }
+  },
+  router: {
+    base: "/revamped-portfolio/",
+  },
 });

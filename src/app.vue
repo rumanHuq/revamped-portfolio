@@ -3,6 +3,7 @@ const route = useRoute();
 const { data: contentNavs } = await useAsyncData("navigation", () => {
   return fetchContentNavigation();
 });
+
 const does = () => {
   const title = contentNavs.value.find((content) => content._path === route.path)?.title;
   switch (title) {
@@ -12,16 +13,17 @@ const does = () => {
       return "writes";
   }
 };
+const baseUrl = import.meta.env.DEV === false ? "/revamped-portfolio/" : "/";
 </script>
 
 <template>
   <main>
     <t-container class="navigation">
-      <NuxtLink to="/">
+      <NuxtLink :to="baseUrl">
         <h1 class="navigation_title">ruman {{ does() }}</h1>
       </NuxtLink>
       <p class="navigation_blog">
-        <NuxtLink to="/blog">Blog</NuxtLink>
+        <NuxtLink :to="baseUrl + 'blog'">Blog</NuxtLink>
       </p>
     </t-container>
     <NuxtPage></NuxtPage>
