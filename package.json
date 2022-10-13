@@ -1,15 +1,13 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "three": "^0.145.0"
   },
   "devDependencies": {
     "@nuxt/content": "^2.1.1",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@types/node": "18.8.0",
+    "@types/three": "^0.144.0",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.24.0",
@@ -22,8 +20,14 @@
     "typescript": "^4.8.4",
     "vite-plugin-eslint": "^1.8.1"
   },
-  "dependencies": {
-    "primeicons": "^6.0.1",
-    "primevue": "^3.17.0"
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "deploy": "push-dir --dir=dist --branch=main --cleanup",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview",
+    "start": "nuxt start"
   }
 }

@@ -1,19 +1,13 @@
 import eslintPlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({
+  srcDir: "src/",
   modules: ["@nuxt/content"],
+  target: "static",
   content: {
     highlight: {
       theme: "dark-plus",
     },
-  },
-  css: [
-    "primevue/resources/themes/saga-blue/theme.css",
-    "primevue/resources/primevue.css",
-    "primeicons/primeicons.css",
-  ],
-  build: {
-    transpile: ["primevue"],
   },
   vite: {
     plugins: [eslintPlugin()],

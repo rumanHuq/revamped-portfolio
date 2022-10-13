@@ -1,0 +1,54 @@
+@import "normalize.css/normalize.css";
+
+/* fonts */
+@font-face {
+  font-family: Source Sans Regular;
+  src: url(/fonts/source-sans-pro/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: Library ThreeAM;
+  src: url(/fonts/library-3-am-font/Library3am-5V3Z.otf);
+}
+
+@font-face {
+  font-family: Library ThreeAM Soft;
+  src: url(/fonts/library-3-am-font/Library3amsoft-6zgq.otf);
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* global styles */
+body {
+  font-family: Source Sans Regular;
+  background-color: #eaeaea;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#__nuxt {
+  height: inherit;
+
+  >main {
+    height: inherit;
+  }
+}
