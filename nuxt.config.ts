@@ -12,4 +12,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [eslintPlugin()],
   },
+  router: {
+    base: "/revamped-portfolio/",
+  },
 });
