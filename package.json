@@ -33,7 +33,8 @@
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview",
-    "start": "nuxt start"
+    "prod:serve": "npm run generate && cd dist && python3 -m http.server",
+    "start": "nuxt dev"
   },
   "version": "0.0.1"
 }
