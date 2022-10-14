@@ -11,7 +11,7 @@
 
 <style lang="scss" scoped>
 .card {
-  background-color: #fff;
+  background-color: rgba($color: #fff, $alpha: 0.5);
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   display: flex;
