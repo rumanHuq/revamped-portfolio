@@ -41,8 +41,6 @@ const baseUrl = "/";
   &_title {
     font-family: Library ThreeAM;
     font-weight: unset;
-    padding: 0;
-    margin: 0;
   }
 }
 </style>

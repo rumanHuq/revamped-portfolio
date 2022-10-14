@@ -2,7 +2,16 @@ import eslintPlugin from "vite-plugin-eslint";
 
 export default defineNuxtConfig({
   srcDir: "src/",
-  modules: ["nuxt-content-git", "@nuxt/content"],
+  modules: [
+    [
+      "nuxt-content-git",
+      {
+        createdAtName: "gitCreatedAt",
+        updatedAtName: "gitUpdatedAt",
+      },
+    ],
+    "@nuxt/content",
+  ],
   target: "static",
   content: {
     highlight: {

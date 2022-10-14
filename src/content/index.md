@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Blog Home
 ---
 
 ::t-container
