@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   srcDir: "src/",
   modules: ["@nuxt/content"],
   target: "static",
+  ssr: false,
   content: {
     highlight: {
       theme: "dark-plus",
@@ -11,8 +12,5 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [eslintPlugin()],
-  },
-  router: {
-    base: "/revamped-portfolio/",
   },
 });
