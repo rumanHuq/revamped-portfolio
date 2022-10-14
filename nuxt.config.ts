@@ -3,6 +3,7 @@ import eslintPlugin from "vite-plugin-eslint";
 export default defineNuxtConfig({
   srcDir: "src/",
   modules: ["@nuxt/content"],
+  target: "static",
   content: {
     highlight: {
       theme: "dark-plus",
