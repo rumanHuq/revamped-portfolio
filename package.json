@@ -33,7 +33,6 @@
     "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview",
-    "deploy": "npm run generate && push-dir --dir=dist --branch=main --cleanup",
     "start": "nuxt start"
   },
   "version": "0.0.1"
