@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   target: "static",
   content: {
     highlight: {
-      theme: "dark-plus",
+      theme: "nord",
     },
   },
   vite: {
